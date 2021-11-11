@@ -29,8 +29,14 @@ function isDate(date) {
   return dateRegex.test(date);
 }
 
+
 // Matches valid 3 or 6 character hex codes used for HTML or CSS.
 function isHexColor(color) {
   const colorRegex = /^\#?[A-Fa-f0-9]{3}([A-Fa-f0-9]{3})?$/;
   return colorRegex.test(color);
 }
+
+console.log(isHexColor('#00FFFF'));
+console.log(isHexColor('#fc9'));
+console.log(isHexColor('#1235679'));
+console.log(isHexColor('#xyz'));
